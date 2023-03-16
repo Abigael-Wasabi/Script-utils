@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Hello World")
+    </script> 
+    <script>
+        let score=39;
+        if (score >=70 && score <=100){
+            alert("A");
+        }
+        else if (score >=60 && score <=69){
+            alert("B");
+        }
+        else if (score >=50 && score <=59){
+            alert("C");
+        }
+        else if (score >=40 && score <=49){
+            alert("D");
+        }
+        else if (score <=40){
+            alert("E");
+        }
+        else{
+            alert("Out of range")
+        }
+    </script>  
+    <script>
+        let firstname=prompt("firstname")
+        let secondname=prompt("Enter your secondname")
+        let fullname=firstname+ " " +secondname
+        alert("Your fullname is " + fullname)
+    </script>   
+    <script>
+        let ICT=(prompt("ICT score"))
+        let HTML=parseInt(prompt("HTML score"))
+        let GIT=parseInt(prompt("GIT score"))
+        let average=(ICT+HTML+GIT)/3
+        alert("Your average score is" +" "+ average)
+        if (average >=70 && average <=100){
+            alert("grade A")
+        }
+        else if (average >=60 && average <=69){
+            alert("grade B")
+        }
+        else if (average >=50 && average <=59){
+            alert("grade C")
+        }
+        else if (average >=40 && average <=49){
+            alert("grade D")
+        }
+        else if (average <40){
+            alert("grade E")
+        }
+        else{
+            alert("Out of range")
+        }
+    </script>                                  
+</body>
+</html>
