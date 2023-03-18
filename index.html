@@ -17,7 +17,7 @@
         }
         else if (score >=60 && score <=69){
             alert("B");
-        }
+        }                                               
         else if (score >=50 && score <=59){
             alert("C");
         }
@@ -38,7 +38,7 @@
         alert("Your fullname is " + fullname)
     </script>   
     <script>
-        let ICT=(prompt("ICT score"))
+        let ICT=parseInt(prompt("ICT score"))
         let HTML=parseInt(prompt("HTML score"))
         let GIT=parseInt(prompt("GIT score"))
         let average=(ICT+HTML+GIT)/3
@@ -61,6 +61,28 @@
         else{
             alert("Out of range")
         }
-    </script>                                  
+    </script>  
+    <script>
+        let Purchase_amount=parseInt(prompt("Purchase Amount"))
+        if (Purchase_amount >=10000){
+            let discount=(15/100 * Purchase_amount)
+            alert("Purchase Amount after discount is " + (Purchase_amount - discount) + "\n" + "and the discount is"+ (discount));
+        }
+        else if(Purchase_amount >=5000 && Purchase_amount <=9999){
+            let discount=(10/100 * Purchase_amount)
+            alert("Purchase Amount after discount is " + (Purchase_amount - discount) + "\n" + "and the discount is " +(discount));
+        }
+        else if(Purchase_amount >=3000 && purchase_amount <=4999){
+            let discount=(5/100 * Purchase_amount)
+            alert("Purchase Amount after discount is" + (Purchase_amount - discount) + "\n" + "and the discount is" + (discount));
+        }
+        else if(Purchase_amount <=2999){
+            let discount=(0/100 * Purchase_amount)
+            alert("Purchase Amount after discount is " + (Purchase_amount - discount) + "\n" + "and the discount is" + (discount));
+        }
+        else{
+            alert("No discount");
+        }
+    </script> 
 </body>
 </html>
