@@ -70,7 +70,7 @@
         }
         else if(Purchase_amount >=5000 && Purchase_amount <=9999){
             let discount=(10/100 * Purchase_amount)
-            alert("Purchase Amount after discount is " + (Purchase_amount - discount) + "\n" + "and the discount is " +(discount));
+            alert("Purchase Amount after discount is " + (Purchase_amount - discount) + "\n" + "and the discount is " + (discount));
         }
         else if(Purchase_amount >=3000 && purchase_amount <=4999){
             let discount=(5/100 * Purchase_amount)
@@ -202,6 +202,17 @@
         const area=Area(14)
         console.log(area);
     </script>
+    <script>
+        function sum(){
+            let sum = 0;
+            for (let i = 1;i<=20; i++){
+                console.log(i);
+                sum+=i;
+            }
+            console.log("The sum is" + " " +sum);
+        }
+            sum()
+       </script>
 </body>
 </html>
 
