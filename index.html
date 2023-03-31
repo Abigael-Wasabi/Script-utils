@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         alert("Hello World")
     </script> 
     <script>
@@ -212,31 +212,22 @@
             console.log("The sum is" + " " +sum);
         }
             sum()
-       </script>
+       </script> -->
+    <input type="number" id="number1" placeholder="number"><br>
+    <input type="number" id="number2" placeholder="number"><br>
+    <button onclick="sum()">Answer</button>
+    <script>
+        function sum() {
+            let number1=document.getElementById("number1").value;
+            let number2=document.getElementById("number2").value;
+
+            let sum=parseInt(number1)+ parseInt(number2);
+            
+            alert(sum);
+         }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
