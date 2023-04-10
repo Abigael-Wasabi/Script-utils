@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- <script>
         alert("Hello World")
@@ -219,43 +221,26 @@
     <button onclick="sum()">Answer</button>
     <script>
         function sum() {
-            let number1=document.getElementById("number1").value;
-            let number2=document.getElementById("number2").value;
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
 
-            let sum=parseInt(number1)+ parseInt(number2);
-            
+            let sum = parseInt(number1) + parseInt(number2);
+
             alert(sum);
-         }
-    </script>
-    <div onmouseout="colorOut()" onmouseover="changeChange()" id="container" style="background-color: #068494; width:400px; height:400px;">button</div>
-   
-    <script>
-        function changeChange(){
-            let mycolor=document.getElementById("container");
-            mycolor.style.backgroundColor="#f455";
         }
-        function colorOut(){ 
-            let mycolor=document.getElementById("container");
-            mycolor.style.backgroundColor='#068494';
+    </script>
+    <div onmouseout="colorOut()" onmouseover="changeChange()" id="container"
+        style="background-color: #068494; width:400px; height:400px;">button</div>
+
+    <script>
+        function changeChange() {
+            let mycolor = document.getElementById("container");
+            mycolor.style.backgroundColor = "#f455";
+        }
+        function colorOut() {
+            let mycolor = document.getElementById("container");
+            mycolor.style.backgroundColor = '#068494';
         }
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
