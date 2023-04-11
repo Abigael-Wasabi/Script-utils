@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock {
+          width: 200px;
+          height: 200px;
+          border: 2px solid black;
+          border-radius: 50%;
+          position: relative;
+        }
+        #hour-hand {
+          width: 6px;
+          height: 50px;
+          background-color: black;
+          position: absolute;
+          left: 97px;
+          top: 50px;
+          transform-origin: bottom center;
+        }
+        #minute-hand {
+          width: 4px;
+          height: 80px;
+          background-color: black;
+          position: absolute;
+          left: 98px;
+          top: 20px;
+          transform-origin: bottom center;
+        }
+        #second-hand {
+          width: 2px;
+          height: 100px;
+          background-color: red;
+          position: absolute;
+          left: 99px;
+          top: 0px;
+          transform-origin: bottom center;
+        } 
+        #center {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            left: 96px;
+            top: 96px;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Analog Watch</h1>
+        <div id="clock">
+          <div id="hour-hand"></div>
+          <div id="minute-hand"></div>
+          <div id="second-hand"></div>
+          <div id="center"></div>
+        </div>
+        <script>
+            function setClock() {
+                let now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+                
+                let hourHand = document.getElementById('hour-hand');
+                let minuteHand = document.getElementById('minute-hand');
+                let secondHand = document.getElementById('second-hand');
+              
+                let hourAngle = ((hours % 12) / 12) * 360 + ((minutes % 60) / 60) * 30;
+                let minuteAngle = (minutes / 60) * 360;
+                let secondAngle = (seconds / 60) * 360;
+              
+                hourHand.style.transform = `rotate(${hourAngle}deg)`;
+                minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
+                secondHand.style.transform = `rotate(${secondAngle}deg)`;
+              }
+              
+              setInterval(setClock, 1000);
+              
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
