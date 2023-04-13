@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        class Student{
+            constructor(email,name){
+                this.email = email;
+                this.name = name;
+            }
+        
+           printDetails(){
+            console.log(`You're email is ${this.email} and name is ${this.name}`);
+           } 
+        }
+    let Student_one=new Student("Student@gmail.com", "John Doe");
+        Student_one.printDetails();
+    </script> -->
+    <script>
+        class Student{
+            #firstName;
+            #lastName;
+            constructor(first,last){
+                this.#firstName = first;
+                this.#lastName = last;
+            }
+            set setFirstName(val){
+                this.#firstName = val;
+            }
+            set setLastName(val){
+                this.#lastName = val;
+            }
+            get fullName(){
+                return `Your fullname is ${this.#firstName}  ${this.#lastName}`; 
+            }
+            //fullName(){
+                //console.log("Your fullname is ${this.#firstName} and ${this.#lastName}")
+        }
+            //let student1=new Student("Edwin","Ouma");
+            //student1.fullName = "Edwin Ouma"
+            let student2=new Student("Samson","Doe");
+            student2.setFirstName="Mary";
+            //student2.setFirstName="John";
+            console.log(student2.fullName);
+        
+    </script>
+</body>
+</html>
